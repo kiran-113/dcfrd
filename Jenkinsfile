@@ -1,13 +1,11 @@
 node('slavebranch') 
 {
-    stage('Continuous Download') 
+    stage('Continuous Download-sales') 
 	{
-    git 'https://github.com/kiran-113/dcfrd.git'
+    git 'https://github.com/sunildevops77/maven.git'
 	}
-    stage('Continuous Build') 
+    stage('Continuous Build-sales') 
 	{
     sh label: '', script: 'mvn package'
 	}
-    stage('Continuous Deployment') 
-	{
 }
