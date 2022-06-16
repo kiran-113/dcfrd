@@ -6,6 +6,6 @@ node('slavebranch')
 	}
     stage('Continuous Build') 
 	{
-    sh label: '', script: 'mvn package'
+    sh  'mvn package'
 	}
 }
